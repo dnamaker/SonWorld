@@ -1,0 +1,116 @@
+# SonAgent rules
+config*.json
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+logfile.txt
+# user_data/*
+# !user_data/strategy/sample_strategy.py
+# !user_data/notebooks
+# !user_data/models
+# !user_data/freqaimodels
+# user_data/freqaimodels/*
+# user_data/models/*
+# user_data/notebooks/*
+SonAgent-plot.html
+SonAgent-profit-plot.html
+SonAgent/rpc/api_server/ui/*
+build_helpers/ta-lib/*
+# user_data/
+# Macos related
+.DS_Store
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+# .ipynb
+
+# memray
+memray-*
+
+# Sphinx documentation
+docs/_build/
+# Mkdocs documentation
+site/
+user_data_example/
+# PyBuilder
+target/
+
+# Jupyter Notebook
+*.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+.env
+.venv
+.idea
+.vscode
+
+.pytest_cache/
+.mypy_cache/
+# *.ipynb
+
+#exceptions
+!*.gitkeep
+repo_tmp/
+/user_data/config.json
