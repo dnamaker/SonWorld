@@ -13,6 +13,8 @@
         "password": "admin"
     },
     "internals": {
-        "sd_notify": true
+        "sd_notify": true,
+        "heartbeat_interval": 60,
+        "process_throttle_secs": 5
     }
 }
