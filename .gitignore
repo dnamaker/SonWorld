@@ -1,5 +1,5 @@
-# SonAgent rules
-config*.json
+# SonWorld rules
+# config*.json
 *.sqlite
 *.sqlite-shm
 *.sqlite-wal
@@ -12,9 +12,9 @@ logfile.txt
 # user_data/freqaimodels/*
 # user_data/models/*
 # user_data/notebooks/*
-SonAgent-plot.html
-SonAgent-profit-plot.html
-SonAgent/rpc/api_server/ui/*
+SonWorld-plot.html
+SonWorld-profit-plot.html
+SonWorld/rpc/api_server/ui/*
 build_helpers/ta-lib/*
 # user_data/
 # Macos related
