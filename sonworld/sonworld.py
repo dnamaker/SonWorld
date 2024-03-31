@@ -62,13 +62,7 @@ class SonWorld(LoggingMixin):
         # if self.emc:
         #     self.emc.shutdown()
 
-        # commit all changes to the database
-        try:
-            Belief.session.commit()
-        except Exception:
-            # Exeptions here will be happening if the db disappeared.
-            # At which point we can no longer commit anyway.
-            pass
+
 
     def startup(self) -> None:
         pass

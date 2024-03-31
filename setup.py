@@ -29,6 +29,7 @@ required = [
     'schedule==1.2.1',
     'gymnasium==0.29.1',
     'pettingzoo==1.24.3',
+    'pytest==8.1.1'
     
 ]
 
