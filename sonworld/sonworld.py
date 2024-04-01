@@ -40,6 +40,8 @@ class SonWorld(LoggingMixin):
         initial_state = self.config.get('initial_state')
 
         self.state = State[initial_state.upper()] if initial_state else State.STOPPED
+
+        
     
     def cleanup(self) -> None:
         """
