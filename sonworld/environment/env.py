@@ -2,8 +2,6 @@ import functools
 from typing import Any, Dict, List, Callable
 from collections import defaultdict
 from copy import copy, deepcopy
-import dill
-import gym
 import numpy as np
 from pettingzoo.utils.env import AgentID, ParallelEnv
 
@@ -12,6 +10,7 @@ class SonEnv(ParallelEnv):
     metadata = {'render.modes': ['human'], 'name': 'sonworld-mmo'}
 
     def __init__(self, config: dict, seed=None):
+        self.config = config
         self._np_random = None
         self._np_seed = None
         self._reset_required = True
