@@ -10,6 +10,8 @@ from typing import Any, Dict, List, Optional, Tuple
 
 from sonworld.mixins import LoggingMixin
 from sonworld.enums.enums import State
+
+from sonworld.channels import WebSocketServer
 # from sonworld.agent import Agent
 # from sonworld.persistence.models import init_db
 
@@ -19,7 +21,7 @@ logger = logging.getLogger(__name__)
 
 class SonWorld(LoggingMixin):
     def __init__(self, config: dict, args: Any = None) -> None:
-
+        
         self.state = State.STOPPED        
         self.args = args
 
@@ -41,7 +43,8 @@ class SonWorld(LoggingMixin):
 
         self.state = State[initial_state.upper()] if initial_state else State.STOPPED
 
-        
+        websocket_server = WebSocketServer()
+        websocket_server.start_server()
     
     def cleanup(self) -> None:
         """
